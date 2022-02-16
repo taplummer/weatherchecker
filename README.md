@@ -12,7 +12,7 @@ If you run this script later in the day, you may get the next day's forecast in 
 
 ```cd weatherchecker```
 
-```./installer your-city tx```
+```./installer st-louis mo```
 
 ## Modifying Crontab
 
