@@ -2,7 +2,7 @@
 
 This is a bash script to pull the weather forecast for the day and push a desktop notification to your computer at 8 AM each work day.
 
-If you run this script later in the day, you may get the next day's forecast in lieu of the current day's forecast. 
+If you run this script in the late morning or afternoon, you may get the next day's forecast in lieu of the current day's forecast. 
 
 ## Installation
 
