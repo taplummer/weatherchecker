@@ -1,0 +1,14 @@
+#!/bin/bash
+
+curl -s -L "https://www.wunderground.com/weather/us/$2/$1" | sed 's/;/\n/g' > ~/.weathertest.abc
+
+cat ~/.weathertest.abc | grep "Advisory from" | tr -d "q&" | uniq > ~/.currentweathernotification
+cat ~/.weathertest.abc | grep "Highs in" | grep -v / | head -n 1 | tr -d "q&" >> ~/.currentweathernotification
+
+notify-send -u normal -t 5000 "Today's Forecast" "$(cat ~/.currentweathernotification)"
+
+rm ~/.currentweathernotification
+
+rm ~/.weathertest.abc
+
+exit
