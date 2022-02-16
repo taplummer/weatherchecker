@@ -16,9 +16,13 @@ If you run this script later in the day, you may get the next day's forecast in 
 
 ## Modifying Crontab
 
+You may want a notification at a time other than 8 AM. If that's the case, enter:
+
 ```crontab -e```
 
 This will pull up your user-specfic crontab. 
+
+You can then change the ``8``` to whichever hour you'd like.
 
 The installer script should've entered ```0 8 * * 1-5 XDG_RUNTIME_DIR=/run/user/$(id -u) bash ~/.weather your-city ca```
 
