@@ -8,7 +8,7 @@ If you run this script later in the day, you may get the next day's forecast in 
 
 ***Note: When you are using the installer, do not use any punctuation. The first argument is your city and the second argument is your state's abbreviation. If your city has two or more names, the names should be separated by a hyphen as shown below***
 
-```git clone ```
+```git clone https://github.com/taplummer/weatherchecker.git```
 
 ```cd weatherchecker```
 
