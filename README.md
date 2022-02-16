@@ -27,3 +27,5 @@ You can then change the 8 to whichever hour you'd like.
 The installer script should've entered ```0 8 * * 1-5 XDG_RUNTIME_DIR=/run/user/$(id -u) bash ~/.weather your-city ca```
 
 On some distros, you may need to change the ```XDG_RUNTIME_DIR=/run/user/$(id -u)``` part. Unfortunately, it's a bit of trial and error with cron pushing notifications, so your mileage may vary if the included configuration doesn't work.
+
+Or you can just switch to Pop!\_OS and thank me later.
