@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cronjob="0 8 * * 1-5 XDG_RUNTIME_DIR=/run/user/$(id -u) bash ~/.weather $1 $2"
+(crontab -u $(whoami) -l; echo "$cronjob" ) | crontab -u $(whoami) -
+
+mv $(pwd)/.weather ~/ 2>/dev/null
+
+if [ ! -e ~/.weather ];then
+	echo "There was an error moving files... Are you root?"
+else
+	echo "If you've entered your information correctly, you're all set. You can safely remove this directory and its contents."
+fi
+
+exit
